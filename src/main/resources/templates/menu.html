@@ -21,6 +21,14 @@
             </th:block>
         </tr>
     </table>
+    <div th:if='${manipedi.equals("manicure")}'>
+        <h3>Manicure</h3>
+        <div th:replace="fragments :: manicureDescription"></div>
+    </div>
+    <div th:unless='${manipedi.equals("manicure")}'>
+        <h3>Pedicure</h3>
+        <div th:replace="fragments :: pedicureDescription"></div>
+    </div>
 </div>
 </body>
 </html>

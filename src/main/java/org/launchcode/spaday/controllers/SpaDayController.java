@@ -88,6 +88,8 @@ public class SpaDayController {
 
         model.addAttribute("appropriateFacials", appropriateFacials);
 
+        model.addAttribute("manipedi", manipedi);
+
         return "menu";
     }
 }
